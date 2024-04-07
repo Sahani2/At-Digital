@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import Hero from './components/Hero-section/Hero';
+import Button from './components/Button/Button';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col min-h-screen">
+<div className='mb-7'><Header/>
+</div>
+<div className="flex-grow">
+<div className='bg-white border-ErrorColor'><Hero/></div>
+</div>
+
+
+<div className=' relative bottom-0 items-end pt-4'><Footer/></div>
     </div>
   );
 }
